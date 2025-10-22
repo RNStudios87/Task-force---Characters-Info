@@ -1,0 +1,462 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #282B1F;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.Full {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.RedLine1 {
+    position: absolute;
+    background-color: #DA5D48;
+    width: 100%;
+    height: 8px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.RedLine2 {
+    position: absolute;
+    background-color: #DA5D48;
+    width: 100%;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#hiddenText1 {
+    position: absolute;
+    font-family: 'Audiowide', static;
+    align-items: center;
+    justify-self: center;
+    text-align: left;
+    transition: all 1s ease-in-out;
+}
+
+#hiddenText2 {
+    position: absolute;
+    font-family: 'Audiowide', static;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: left;
+}
+
+#hiddenText3 {
+    position: absolute;
+    font-family: 'Audiowide', static;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: left;
+}
+
+#hiddenText4 {
+    position: absolute;
+    font-family: 'Audiowide', static;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: left;
+}
+
+.Iconos {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.Iconos img {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+    margin: -20px 8px 0 0;
+}
+
+#Imagen2 {
+    padding: 100px 0 0 0;
+}
+
+.Night {
+    position: absolute;
+    top: 0;
+    font-family: 'Audiowide', static;
+    background-color: #cdd1cb;
+    color: #253012;
+    transform: scale(1.5);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    margin: -10px 0 0 0;
+    z-index: 12;
+}
+
+.Night:hover {
+    background-color: #a5a7a4;
+}
+
+.Night:active {
+    background-color: #6ac436;
+    color: #324318;
+}
+
+.All {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Left {
+    width: 700px;
+    max-height: 450px;
+    margin: 0 0 70px 0;
+    transform: scale(0.9);
+    padding: 0 100px 0 0;
+    z-index: 4;
+}
+
+.Right {
+    max-width: 960px;
+    height: 100%;
+    margin: 0;
+    padding: 130px 0 0 80px;
+    transition: transform 0.3s ease-in-out;;
+}
+
+.Right:hover {
+    animation: BreatheIn 2.5s ease-in-out infinite;
+}
+
+.Top {
+    position: absolute;
+    width: 1920px;
+    height: 503px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 0 330px 0;
+    transform: scale(0.75);
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.Bottom {
+    position: relative;
+    max-width: 1920px;
+    max-height: 577px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 300px 0 0 0;
+    transform: scale(0.75);
+    z-index: 3;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.Background {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    transform: scale(0.75);
+}
+
+.Background img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1682px;
+    height: 946px;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.Cuadro {
+    position: relative;
+    width: 414.01px;
+    height: 521px; 
+    z-index: 1;
+    display: flex;
+    transform: scale(1);
+    background-color: #747975;
+    border-radius: 60px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.Personajes {
+    position: relative;
+    width: 414.01px;
+    height: 521px; 
+    z-index: 2;
+    display: flex;
+    transform: scale(1);
+}
+
+
+.Personajes img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 414.01px;
+    height: 521px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 60px;
+}
+
+.PersonajeA {
+    width: 414.01px;
+    height: 521px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.PersonajeA img {
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 2;
+    left: 10px;
+    transform: translateY(40px);
+}
+
+.PersonajeA:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.FondoWZ:hover {
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.Bloque {
+    width: 414.01px;
+    height: 90px;
+    position: absolute;
+    background-color: #282B1F;
+    border-style: solid;
+    border-color: #DA5D48;
+    border-width: 4px 0 4px 0;
+    z-index: 2;
+    bottom: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.BloqueT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.Logo {
+    position: relative;
+    z-index: 2;
+    height: 66px;
+    width: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo img {
+    width: 66px;
+    height: 66px;
+}
+
+#Text {
+    font-family: 'Audiowide', static;
+    font-size: 61.07px;
+    color: #E6EBE7;
+}
+
+#Text1 {
+    font-family: 'Audiowide', static;
+    font-size: 21.15px;
+    color: #E6EBE7;
+}
+
+#Text, #Text1 {
+    margin: 0;
+    padding: 0;
+    gap: 0; 
+    line-height: 0.9;
+}
+
+#Color {
+    color: #E6EBE7;
+    z-index: 2;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#Nombre {
+    font-family: 'Audiowide', static;
+    font-size: 128.18px;
+    color: #E6EBE7;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    margin: -20px 0 -10px 0;
+}
+
+#Texto {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 35px;
+    color: #E6EBE7;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+#TextoA {
+    font-family: 'Audiowide', static;
+    font-size: 27px;
+    color: #E6EBE7;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 -35px 0;
+}
+
+.Gradiente {
+    position: absolute;
+    height: 500px;
+    z-index: 3;
+    margin: 750px 0 0 0;
+    top:0;
+    transform: scale(1.5);
+}
+
+.Gradiente img {
+    width: 1000px;
+    max-height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#Gradiente1 {
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    padding: 0 800px 0 0;
+    width: 1000px;
+}
+
+#Imagen3 {
+    padding-top: 30px;
+}
+
+#Imagen4 {
+    padding-top: 80px;
+}
+
+#demoImage {
+    position: absolute;
+    opacity: 0.9;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: scale(0.75) translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(0.75) translateY(0);
+    }
+}
+
+@keyframes BreatheIn {
+    0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    @keyframes fadeInUp1 {
+    from {
+        opacity: 0;
+        transform: scale(0.4) translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(0.4) translateY(0);
+    }
+    }
+
+    .Bottom {
+        transform: scale(0.4);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        animation: fadeInUp1 1s ease-in-out;
+        margin: 100px 0 0 0;
+    }
+
+    .Gradiente {
+        margin: 730px 0 0 0;
+        transform: scaleY(2.8);
+    }
+
+    .Top {
+        transform: scale(0.5);
+        margin: 0 0 400px 0;
+    }
+
+    .Background {
+        transform: scale(0.6);
+    }
+
+    .Left {
+        padding: 0 0 0 280px;
+        margin: 0 -50px 100px 0;
+        width: 440px;
+    }
+
+    .Right {
+        padding: 0 0 0 0;
+        margin: 0 0 0 -50px;
+    }
+
+    .Night {
+        transform: scale(2.1);
+        margin: -90px 0 0 0;
+    }
+}

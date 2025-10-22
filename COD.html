@@ -1,0 +1,188 @@
+<!doctype html>
+<head>
+     <link rel="icon" href="Codimages/Logo.png">
+     <title>Task Force</title>
+     <link rel="Stylesheet" href="Styles/StyleCOD.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,
+wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Audiowide&family=Montserrat:ital,
+wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
+1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="Java/Java.js">
+     
+</script>
+</head>
+<body>
+
+<div class="RedLine1"></div>
+<div class="RedLine2"></div>
+<div class="Full">
+     <div class="Background">
+          <img src="Codimages/Fondo.png" alt="Background">
+          <img src="Codimages/Fondo2.png" alt="Background3" id="Gradiente1">
+     </div>
+     <div class="Top">
+          <button class="Night" onclick="toggleImage5(); changeColors();"> Night vision </button>
+          <img src="Codimages/Night1.png" alt="Night1" id="demoImage" style="display: none;">
+          <div id="hiddenText1" style="display:none;"> 
+               <div class="All">
+                    <div class="Left">
+                         <h1 id="Nombre"> GHOST </h1> 
+                         <h2 id="Texto"> Operador misterioso del SAS británico, reconocido por 
+                         su icónica máscara de calavera y su actitud reservada. 
+                         Especialista en operaciones encubiertas e infiltración. </h2>
+                         <div class="Iconos">
+                              <img src="Codimages/Bandera.png" alt="Bandera" width="30px">
+                              <h3 id="Texto"> Reino Unido </h3>
+                         </div>
+                         <div class="Iconos">
+                              <img src="Codimages/Arma.png" alt="Arma" width="30px">
+                              <h3 id="Texto"> M4A1 </h3>
+                         </div>
+                    </div>
+                    <img src="Codimages/Fondo1.png" alt="Background2" class="Gradiente">
+                    <div class="Right">
+                         <img id="Imagen1" src="Codimages/Ghost.png" alt="Ghost" width="700px" style="display: none;">
+                    </div>
+               </div>
+          </div>
+           <div id="hiddenText2" style="display:none;"> 
+               <div class="All">
+                    <div class="Left">
+                         <h3 id="TextoA"> CAPÍTAN</h3>
+                         <h1 id="Nombre"> PRICE </h1> 
+                         <h2 id="Texto"> Líder veterano de la Fuerza de Tareas 141, 
+                              famoso por su carácter fuerte, experiencia en combate y 
+                              su inseparable boina. Es el estratega del grupo. </h2>
+                         <div class="Iconos">
+                              <img src="Codimages/Bandera.png" alt="Bandera" width="30px">
+                              <h3 id="Texto"> Reino Unido </h3>
+                         </div>
+                         <div class="Iconos">
+                              <img src="Codimages/Arma.png" alt="Arma" width="30px">
+                              <h3 id="Texto"> FN SCAR-H </h3>
+                         </div>
+                    </div>
+                    <img src="Codimages/Fondo1.png" alt="Background2" class="Gradiente">
+                    <div class="Right">
+                         <img id="Imagen2" src="Codimages/Price.png" alt="Price" width="700px" style="display: none;">
+                    </div>
+               </div>
+          </div>
+          <div id="hiddenText3" style="display:none;"> 
+               <div class="All">
+                    <div class="Left">
+                         <h1 id="Nombre"> GAZ </h1> 
+                         <h2 id="Texto"> Ex agente del SAS británico, joven pero con gran habilidad 
+                              en combate urbano. Se une a la Fuerza de Tareas 141 bajo el mando de Price. </h2>
+                         <div class="Iconos">
+                              <img src="Codimages/Bandera.png" alt="Bandera" width="30px">
+                              <h3 id="Texto"> Reino Unido </h3>
+                         </div>
+                         <div class="Iconos">
+                              <img src="Codimages/Arma.png" alt="Arma" width="30px">
+                              <h3 id="Texto"> HK416 </h3>
+                         </div>
+                    </div>
+                    <img src="Codimages/Fondo1.png" alt="Background2" class="Gradiente">
+                    <div class="Right">
+                         <img id="Imagen3" src="Codimages/Gaz.png" alt="Gaz" width="700px" style="display: none;">
+                    </div>
+               </div>
+          </div>
+            <div id="hiddenText4" style="display:none;"> 
+               <div class="All">
+                    <div class="Left">
+                         <div id="left">
+                              <h1 id="Nombre"> FARAH </h1> 
+                              <h2 id="Texto"> Comandante de la Fuerza de Liberación de Urzikistán. Una líder valiente 
+                              y determinada que lucha por liberar a su pueblo de la ocupación y la opresión. </h2>
+                              <div class="Iconos">
+                                   <img src="Codimages/Bandera.png" alt="Bandera" width="30px">
+                                   <h3 id="Texto"> Urzikistán </h3>
+                              </div>
+                              <div class="Iconos">
+                                   <img src="Codimages/Arma.png" alt="Arma" width="30px">
+                                   <h3 id="Texto"> AK-47 </h3>
+                              </div>
+                         </div>
+                    </div>
+                    <img src="Codimages/Fondo1.png" alt="Background2" class="Gradiente">
+                    <div class="Right">
+                         <img id="Imagen4" src="Codimages/Farah.png" alt="Farah" width="700px" style="display: none;">
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="Bottom">
+          <div class="Personajes">
+               <div class="Cuadro" onclick="toggleText1(); toggleImage1();">
+                    <div class="FondoWZ">
+                         <img src="Codimages/Fondo.jpg" alt="Fondo">
+                    </div>
+                    <img class="PersonajeA" src="Codimages/Ghost.png" alt="Ghost">
+                    <div class="Bloque" alt="Nombres">
+                         <i id="Color" class="fa-solid fa-star"></i>
+                         <div class="Logo">
+                              <img src="Codimages/Logo.png" alt="Logo">  
+                         </div>
+                         <h1 id="Text"> GHOST </h1>
+                         <i id="Color" class="fa-solid fa-star"></i>
+                    </div>
+               </div>
+          </div>
+          <div class="Personajes">
+                    <div class="Cuadro" onclick="toggleText2(); toggleImage2();">
+                         <img class="FondoWZ" src="Codimages/Fondo.jpg" alt="Fondo">
+                         <img class="PersonajeA" src="Codimages/Price.png" alt="Price">
+                         <div class="Bloque" alt="Nombres">
+                         <i id="Color" class="fa-solid fa-star"></i>
+                         <div class="Logo">
+                              <img src="Codimages/Logo.png" alt="Logo">  
+                         </div>
+                         <div class="BloqueT">
+                              <h3 id="Text1"> CAPITÁN </h3>
+                              <h1 id="Text"> PRICE </h1>
+                         </div>
+                         <i id="Color" class="fa-solid fa-star"></i>
+                         </div>
+                    </div>
+          </div>
+          <div class="Personajes">
+                     <div class="Cuadro" onclick="toggleText3(); toggleImage3();">
+                         <img class="FondoWZ" src="Codimages/Fondo.jpg" alt="Fondo">
+                         <img class="PersonajeA" src="Codimages/Gaz.png" alt="Gaz">
+                         <div class="Bloque" alt="Nombres">
+                         <i id="Color" class="fa-solid fa-star"></i>
+                         <div class="Logo">
+                              <img src="Codimages/Logo.png" alt="Logo">  
+                         </div>
+                         <h1 id="Text"> GAZ </h1>
+                         <i id="Color" class="fa-solid fa-star"></i>
+                          </div>
+                    </div>
+          </div>
+          <div class="Personajes">
+               <div class="Cuadro" onclick="toggleText4(); toggleImage4();">
+                    <img src="Codimages/Fondo.jpg" alt="Fondo">
+                    <img class="PersonajeA" src="Codimages/Farah.png" alt="Farah">
+                    <div class="Bloque" alt="Nombres">
+                         <i id="Color" class="fa-solid fa-star"></i>
+                         <div class="Logo">
+                              <img src="Codimages/Logo.png" alt="Logo">  
+                         </div>
+                         <h1 id="Text"> FARAH </h1>
+                         <i id="Color" class="fa-solid fa-star"></i>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="Fondo"></div>
+</div>
+</body>
